@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Tags</title>
+    <style>
+        table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+		}
+		th {
+			text-align: center;
+		}
+        table#t01 tr:nth-child(even) {
+        background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+        background-color:#fff;
+        }
+        table#t01 th {
+        background-color: black;
+        color: white;
+        }
+		caption{ font-size: 30px; font-weight: bold; padding-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <table id="t01" style="width:100%">
+        <tr>
+            <th>SN</th>
+            <th>Tag</th>
+            <th>Tag Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&lt;h1&gt;</td>
+            <td>Heading Tag</td>
+            <td><h1>Hello</h1></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&lt;a&gt;</td>
+            <td>Defines a hyperlink</td>
+            <td><a href="http://www.google.com">Google</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&lt;!--...--&gt;</td>
+            <td>Comment tag</td>
+            <td><!--This is a comment.--></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&lt;b&gt;</td>
+            <td>Bold Text</td>
+            <td><b>Hello</b></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&lt;audio&gt;</td>
+            <td>Sound Content</td>
+            <td><audio controls></audio></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&lt;br&gt;</td>
+            <td>Single line break</td>
+            <td><h1>Hello</h1><br/></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&lt;button&gt;</td>
+            <td>Clickable Button</td>
+            <td> <button type="button">Click Me!</button> </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&lt;caption&gt;</td>
+            <td>Table Caption</td>
+            <td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&lt;code&gt;</td>
+            <td>Piece of Computer Code</td>
+            <td> <code>A piece of computer code</code> </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&lt;cite&gt;</td>
+            <td>Title of a work</td>
+            <td> <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&lt;del&gt;</td>
+            <td>Deleted from a document</td>
+            <td> <p>My favorite color is <del>blue</del></p> </td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&lt;div&gt;</td>
+            <td>Defines a section in a document</td>
+            <td> <div style="color:#0000FF">
+                      <h3>This is a heading</h3>
+                     <p>This is a paragraph.</p>
+                </div> </td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&lt;em&gt;</td>
+            <td>emphasized text </td>
+            <td><em>Emphasized text</em></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&lt;hr&gt;</td>
+            <td>Defines a thematic change in the content</td>
+            <td><hr></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&lt;i&gt;</td>
+            <td>displayed in italic.</td>
+            <td><i>The lightning</i></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>&lt;img&gt;</td>
+            <td>Define an image</td>
+            <td> <img src="img/fruit-milk.jpg" alt="Fruit Milk" height="40" width="50"> </td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>&lt;input&gt;</td>
+            <td>Defines an input control</td>
+            <td><input type="text" name="fname"></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>&lt;ins&gt;</td>
+            <td>inserted into a document</td>
+            <td> <ins>red</ins></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>&lt;kbd&gt;</td>
+            <td>keyboard input</td>
+            <td> <kbd>Keyboard input</kbd> </td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>&lt;label&gt;</td>
+            <td>Defines a label for an element</td>
+            <td><label for="">Male</label></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>&lt;li&gt;</td>
+            <td>Defines a list item</td>
+            <td><li>Coffee</li></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>&lt;mark&gt;</td>
+            <td>marked/highlighted text</td>
+            <td><mark>milk</mark></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>&lt;meta&gt;</td>
+            <td>metadata about an HTML document</td>
+            <td><meta charset="UTF-8"></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>&lt;ol&gt;</td>
+            <td>an ordered list</td>
+            <td><ol>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                </ol></td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>&lt;p&gt;</td>
+            <td>Defines a paragraph</td>
+            <td> <p>This is some text in a paragraph.</p> </td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>&lt;pre&gt;</td>
+            <td>Defines preformatted text</td>
+            <td> <pre>
+                    Text in a pre element
+                    is displayed in a fixed-width
+                    font, and it preserves
+                    both      spaces and
+                    line breaks
+                    </pre> </td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>&lt;q&gt;</td>
+            <td>a short quotation</td>
+            <td><q>Build a future where people live in harmony with nature.</q></td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>&lt;script&gt;</td>
+            <td>Defines a client-side script</td>
+            <td> <script>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                </script> </td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>&lt;small&gt;</td>
+            <td>Defines smaller text</td>
+            <td><p><small>Copyright 1999-2050 by Refsnes Data</small></p></td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>&lt;strong&gt;</td>
+            <td>Defines important text</td>
+            <td><strong>Strong text</strong></td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>&lt;sub&gt;</td>
+            <td>Defines subscripted text</td>
+            <td><p>This text contains <sub>subscript</sub> text.</p></td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>&lt;sup&gt;</td>
+            <td>Defines superscripted text</td>
+            <td> <p>This text contains <sup>superscript</sup> text.</p> </td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>&lt;u&gt;</td>
+            <td>Underline</td>
+            <td><u>parragraph</u></td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>&lt;ul&gt;</td>
+            <td>Defines an unordered list</td>
+            <td> <ul>
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                  </ul> </td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>&lt;var&gt;</td>
+            <td>Defines a variable</td>
+            <td><var>Variable</var></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>&lt;table&gt;</td>
+            <td>Defines a table</td>
+            <td> <table>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                          <td></td>
+                         <td></td>
+                      </tr>
+                    </table> </td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>&lt;td&gt;</td>
+            <td>Defines a cell in a table</td>
+            <td> <table>
+                      <tr>
+                        <td>Cell A</td>
+                        <td>Cell B</td>
+                      </tr>
+                </table> </td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>&lt;th&gt;</td>
+            <td>Defines a header cell in a table</td>
+            <td><table>
+                     <tr>
+                       <th>Month</th>
+                       <th>Savings</th>
+                </tr></table></td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>&lt;title&gt;</td>
+            <td>Defines a title for the document</td>
+            <td><title>HTML Reference</title></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>&lt;tr&gt;</td>
+            <td>Defines a row in a table</td>
+            <td><table>
+                      <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                        </tr></table></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>&lt;time&gt;</td>
+            <td>Defines a date/time</td>
+            <td><p>We open at <time>10:00</time> every morning.</p></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>&lt;span&gt;</td>
+            <td>Defines a section in a document</td>
+            <td> <p>My mother has <span style="color:blue">blue</span> eyes.</p> </td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>&lt;select&gt;</td>
+            <td>Defines a drop-down list</td>
+            <td> <select>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                </select> </td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>&lt;section&gt;</td>
+            <td>Defines a section in a document</td>
+            <td> <section>
+                      <h1>WWF</h1>
+                      <p>The World Wide Fund for Nature (WWF) is....</p>
+                </section> </td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>&lt;s&gt;</td>
+            <td>Defines text that is no longer correct</td>
+            <td><p><s>My car is blue.</s></p></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>&lt;option&gt;</td>
+            <td>Defines an option in a drop-down list</td>
+            <td> <select>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                </select> </td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>&lt;object&gt;</td>
+            <td>Defines an embedded object</td>
+            <td> <object width="400" height="400" data="helloworld.swf"></object> </td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>&lt;iframe&gt;</td>
+            <td>Defines an inline frame</td>
+            <td> <iframe src="http://www.google.com"></iframe> </td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>&lt;address&gt;</td>
+            <td>Defines contact information for the author/owner of a document</td>
+            <td>
+				<address>
+				Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+				Visit us at:<br>
+				Example.com<br>
+				Box 564, Disneyland<br>
+				USA
+				</address>
+			</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>&lt;abbr&gt;</td>
+            <td>Defines an abbreviation or an acronym</td>
+            <td>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. </td>
+        </tr>
+		<caption>HTML Tags</caption></td>
+    </table>
+	
+</body>
+</html>
